@@ -1,0 +1,11 @@
+medical_warehouse_profile:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: Rachelsemer@db93
+      port: 5432
+      dbname: medical_warehouse
+      schema: staging

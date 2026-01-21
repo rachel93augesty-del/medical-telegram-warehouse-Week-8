@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: dim_channels
+    description: "Dimension table containing unique Telegram channels."
+    columns:
+      - name: channel_key
+        description: "Primary key for the channel dimension"
+      - name: channel_name
+        description: "Name of the Telegram channel"
+
+  - name: dim_dates
+    description: "Dimension table containing unique dates."
+    columns:
+      - name: date_key
+        description: "Primary key for the date dimension"
+      - name: full_date
+        description: "The calendar date"
+
+  - name: fct_messages
+    description: "Fact table containing all Telegram messages per channel and date."
+    columns:
+      - name: message_id
+        description: "Unique identifier for each message"
+      - name: channel_key
+        description: "Foreign key to dim_channels"
+      - name: date_key
+        description: "Foreign key to dim_dates"
+      - name: message_text
+        description: "Content of the message"
+      - name: message_length
+        description: "Length of the message text in characters"
+      - name: view_count
+        description: "Number of views the message received"
+      - name: forward_count
+        description: "Number of times the message was forwarded"
+      - name: has_image
+        description: "Flag indicating if the message contains an image"

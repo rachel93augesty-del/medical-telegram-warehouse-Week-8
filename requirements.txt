@@ -2,3 +2,13 @@
 telethon
 python-dotenv
 loguru
+
+# requirements.txt for Task 2
+psycopg2-binary>=2.9
+sqlalchemy>=2.0
+pandas>=2.0
+dbt-postgres>=1.7
+python-dotenv>=1.0
+loguru>=0.7
+pytest>=8.0
+pytest-postgresql>=2.0
