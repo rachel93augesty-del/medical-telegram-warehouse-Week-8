@@ -28,7 +28,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run raw data loader script
-        run: python src/load_to_postgres.py
+        run: python src/load_raw_data.py   # <-- updated filename
 
       - name: Install dbt
         run: pip install dbt-postgres
