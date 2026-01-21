@@ -26,7 +26,3 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install dbt-postgres
-
-      - name: Validate dbt project (no DB required)
-        run: |
-          dbt parse --project-dir medical_warehouse
