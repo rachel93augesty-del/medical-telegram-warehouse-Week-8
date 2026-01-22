@@ -1,16 +1,17 @@
-name: Task-2 DBT Validation
+name: Task-3 YOLO Validation
 
 on:
   push:
     branches:
-      - task-2
+      - task-3
+      - main
   pull_request:
     branches:
       - main
       - dev
 
 jobs:
-  dbt-validate:
+  yolo-validate:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,4 +26,4 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install dbt-postgres
+          pip install ultralytics pandas
