@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: external
+    schema: public      
+    tables:
+      - name: yolo_detections
+        description: "YOLO object detection results loaded from CSV"

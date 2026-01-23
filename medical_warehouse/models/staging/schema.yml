@@ -1,22 +1,14 @@
 version: 2
 
 models:
-  - name: stg_telegram_messages
-    description: "Staging table for raw Telegram messages, cleaned and typed."
+  - name: stg_yolo_detections
+    description: "Staging model for YOLO image detection results"
     columns:
-      - name: message_id
-        description: "Unique identifier for each message"
-      - name: channel_name
-        description: "Name of the Telegram channel"
-      - name: message_date
-        description: "Date and time the message was posted"
-      - name: text_content
-        description: "Content of the message"
-      - name: view_count
-        description: "Number of views the message received"
-      - name: forward_count
-        description: "Number of times the message was forwarded"
-      - name: has_image
-        description: "Flag indicating if the message contains an image"
-      - name: message_length
-        description: "Length of the message text in characters"
+      - name: image_file
+        description: "Image filename"
+      - name: detected_class
+        description: "Detected object class from YOLO"
+      - name: confidence_score
+        description: "Confidence score of the detection"
+      - name: image_category
+        description: "Derived image category (promotional, product_display, lifestyle, other)"

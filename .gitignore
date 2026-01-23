@@ -16,3 +16,4 @@ data/
 target/
 dbt_packages/
 logs/
+yolov8n.pt

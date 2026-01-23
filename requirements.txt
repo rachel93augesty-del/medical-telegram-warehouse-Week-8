@@ -12,3 +12,11 @@ python-dotenv>=1.0
 loguru>=0.7
 pytest>=8.0
 pytest-postgresql>=2.0
+
+#task-3 requirements 
+torch==2.10.0+cpu
+torchvision==0.25.0+cpu
+numpy==1.26.4  # latest 1.26+ compatible with Python 3.13
+pandas==2.3.3
+ultralytics==8.0.20
+opencv-python-headless==4.8.0.76

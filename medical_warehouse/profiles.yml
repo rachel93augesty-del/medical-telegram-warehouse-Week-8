@@ -1,4 +1,4 @@
-medical_warehouse_profile:
+medical_warehouse:
   target: dev
   outputs:
     dev:
