@@ -1,22 +1,10 @@
-# requirements.txt for Task 1
-telethon
-python-dotenv
-loguru
 
-# requirements.txt for Task 2
-psycopg2-binary>=2.9
+# Task 4: Data Analysis & Validation
+fastapi==0.128.0
+uvicorn==0.40.0
 sqlalchemy>=2.0
-pandas>=2.0
-dbt-postgres>=1.7
+psycopg2-binary>=2.9
+pydantic>=2.7
 python-dotenv>=1.0
 loguru>=0.7
 pytest>=8.0
-pytest-postgresql>=2.0
-
-#task-3 requirements 
-torch==2.10.0+cpu
-torchvision==0.25.0+cpu
-numpy==1.26.4  # latest 1.26+ compatible with Python 3.13
-pandas==2.3.3
-ultralytics==8.0.20
-opencv-python-headless==4.8.0.76

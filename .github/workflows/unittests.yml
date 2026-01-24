@@ -1,17 +1,18 @@
-name: Task-3 YOLO Validation
+name: Task-4 Build an Analytical API
 
 on:
   push:
     branches:
-      - task-3
+      - task-4
       - main
+      - dev
   pull_request:
     branches:
       - main
       - dev
 
 jobs:
-  yolo-validate:
+  task4-build:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,4 +27,5 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install ultralytics pandas
+          pip install -r requirements.txt
+
