@@ -1,9 +1,9 @@
-name: Task-4 Build an Analytical API
+name: Task-5 Pipeline Orchestration
 
 on:
   push:
     branches:
-      - task-4
+      - task-5
       - main
       - dev
   pull_request:
